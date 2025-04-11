@@ -243,7 +243,7 @@ def slack_video():
                 }
                 image_block = {
             "type": "image",
-            "image_url": f"https://7309-58-72-151-123.ngrok-free.app/gif/output_segment_{seg_id:04d}.gif",
+            "image_url": f"https://f2b8-58-72-151-123.ngrok-free.app/gif/output_segment_{seg_id:04d}.gif",
             "alt_text": f"세그먼트 {seg_id} GIF"
         }
                 actions_block = {
@@ -252,7 +252,7 @@ def slack_video():
                         {
                             "type": "button",
                             "text": {"type": "plain_text", "text": "영상 보러가기"},
-                            "url": f"https://7309-58-72-151-123.ngrok-free.app/video_player?t={start_time}"
+                            "url": f"https://f2b8-58-72-151-123.ngrok-free.app/video_player?t={start_time}"
                         },
                         {
                             "type": "button",
@@ -263,7 +263,7 @@ def slack_video():
                         {
                             "type": "button",
                             "text": {"type": "plain_text", "text": "Edit in Web"},
-                            "url": f"https://7309-58-72-151-123.ngrok-free.app/?q={encoded_query}"
+                            "url": f"https://f2b8-58-72-151-123.ngrok-free.app/?q={encoded_query}"
                         }
                     ]
                 }
