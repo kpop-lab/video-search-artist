@@ -30,3 +30,7 @@ imageio
 insightface
 opencv-python
 onnxruntime
+faiss-cpu
+langchain
+langchain-community
+langchain-huggingface
