@@ -56,12 +56,12 @@ faiss_index.add(embeddings_array)
 # 최신 HuggingFaceEndpoint를 사용하여 LLM 구성
 # max_new_tokens를 명시적으로 150으로 지정하여 오류를 피합니다.
 llm = HuggingFaceEndpoint(
-    repo_id="google/flan-t5-large",
+    repo_id="google/flan-t5-base",
     huggingfacehub_api_token=HUGGINGFACE_API_KEY,
     temperature=0.7,
     max_new_tokens=150,
-    task="text2text-generation",  # 작업을 명시적으로 설정
-    model_kwargs={}               # 불필요한 파라미터를 전달하지 않음
+    task="text2text-generation",
+    model_kwargs={}
 )
 
 
