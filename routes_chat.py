@@ -60,8 +60,8 @@ llm = HuggingFaceEndpoint(
     huggingfacehub_api_token=HUGGINGFACE_API_KEY,
     temperature=0.7,
     max_new_tokens=150,
-    task="text2text-generation",
-    model_kwargs={}
+    task="text2text-generation",  # 작업을 명시적으로 지정
+    model_kwargs={}               # 불필요한 파라미터를 보내지 않음
 )
 
 
